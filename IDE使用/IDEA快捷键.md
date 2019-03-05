@@ -2,11 +2,20 @@
 
 ## 安装
 
+##  插件
+
+### lombok
+
+
+
 ## 基本快捷键
 1. main方法:psvm
 2. System.out.println()快捷键：sout
 3. 实现类: ctrl + alt +B
-
+4. 方法调用向上: alt+F7
+5. 代码格式化: ctrl+alt+L
+6. 启动项目:shift+F10
+7. 终端:alt+F12
 
 # 无处不在的跳转
 
