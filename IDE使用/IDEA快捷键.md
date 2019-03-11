@@ -8,6 +8,8 @@
 
 
 
+
+
 ## 基本快捷键
 1. main方法:psvm
 2. System.out.println()快捷键：sout

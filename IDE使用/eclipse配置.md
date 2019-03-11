@@ -28,6 +28,9 @@
 
    1）配置JDK 默认情况下，Eclipse会自动关联环境变量中配置的JDK，如果我们安装了多个版本的JDK，也可以手工进行配置，方法如下： “Window”--“Preferences”--“Java”--“Installed JREs”--“Add”--“Standard VM”--选择JDK安装目录。
 
+9.代码长度80提示线
+WIndow -> Preferences -> General -> Editors -> Text Editors；
+WIndow -> Preferences -> Java -> Code Stylw -> formatter -> eclipse2.1；
 ## 快捷键
 1. 显示当前路径: ALT + SHIFT + B
 
