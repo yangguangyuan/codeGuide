@@ -102,7 +102,7 @@ Transactions 事务
 * 静态aop
   * 代表:aspectJ
   * 预先编译到系统中:aspectJ使用ajc编辑器将各个aspect以java字节码的形式编译到系统静态类中
-  * 有点:虚拟机直接加载java类就行,运行速度快
+  * 优点:虚拟机直接加载java类就行,运行速度快
   * 缺点:灵活性不够,改变织入位置,重新修改Aspect定义文件
 * 动态aop
   * 例如:spring aop,AspectJ融合AspectWerkez框架
@@ -110,38 +110,58 @@ Transactions 事务
   * 优点:配置方便:xml/注解
   * 缺点:性能损失(可容忍)
 
-### java平台实现机制
-
-* 动态代理
-  * 针对于接口
-  * spring aop,Nanning用此种方式实现
-* 动态字节码增强
-  * 没有接口也可以实现
-  * 可以为spring aop提供扩展
-
-* java代码生成
-* 自定义类加载器
-  * JBoss AOP,AspectWerkz使用此种方式
-
-* AOL扩展
-  * AspectJ使用这种方式
-
-1. 动态代理无法对其子类进行扩展
-2. 动态字节码增强进行扩展
-3. 
-
 ### 专业术语
 
-* Joinpoint 织入点
-* Pointcut 织入规则
-* Advice 织入方式
-* Aspect 
-* AOL aop实现语言的统称
+* Joinpoint **连接点**
+  * 方法调用点
+* Pointcut **切入点**
+  * 将多个Joinpoint集中起来的规则
+* Advice **通知**
+  * (多个方法调用的统一执行点)定义了在 pointcut 里面定义的程序点具体要做的操作
+  * 场景:有两种规则的多个位置,需要做同一种操作
+* **introduction引介**
+* Aspect **切面**:
+  * 是切入点和通知的结合
+* **weaving织入**
+  * 入是一个过程，是将切面应用到目标对象从而创建出AOP代理对象的过程，织入可以在编译期，类装载期，运行期进行。
+* AOL aop
+  * 实现语言的统称
+* 织入和织入器
+  * ​	AOP集成到OOP系统中
 * 
 
 ## 底层原理
 
+### Java平台实现机制
+
+- 动态代理
+  - 针对于接口
+  - spring aop,Nanning用此种方式实现
+- 动态字节码增强
+  - 没有接口也可以实现
+  - 可以为spring aop提供扩展
+- java代码生成
+- 自定义类加载器
+  - JBoss AOP,AspectWerkz使用此种方式
+- AOL扩展
+  - AspectJ使用这种方式
+
+1. 动态代理无法对其子类进行扩展
+2. 动态字节码增强进行扩展
+
+### Spring AOP的实现机制
+
+#### 代理模式
+
+* 静态代理问题:Pointcut 过多操作繁琐
+
+#### 动态代理
+
+
+
 ## 相似对比
+
+
 
 
 
