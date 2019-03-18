@@ -10,21 +10,23 @@
 
    
 
-3. 启动提速 Eclipse,关闭验证，方法如下： “Window”--“Preferences”--“General”--“Startup and Shutdown”--去掉你不想要的插件即可。
+3. 启动提速 Eclipse,关闭插件，方法如下： “Window”--“Preferences”--“General”--“Startup and Shutdown”--去掉你不想要的插件即可。
 
-4. 字体修改
+4. 关闭验证:validation
 
-5. 编码修改
+5. 字体修改
+
+6. 编码修改
 
    workspace
 
    jsp
 
-6. tomcat配置
+7. tomcat配置
 
-7. 编译时间加长
+8. 编译时间加长
 
-8. maven打包
+9. maven打包
 
    1）配置JDK 默认情况下，Eclipse会自动关联环境变量中配置的JDK，如果我们安装了多个版本的JDK，也可以手工进行配置，方法如下： “Window”--“Preferences”--“Java”--“Installed JREs”--“Add”--“Standard VM”--选择JDK安装目录。
 
