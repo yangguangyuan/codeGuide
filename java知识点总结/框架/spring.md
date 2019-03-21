@@ -167,15 +167,24 @@ Transactions 事务
 * 扩展子类,覆写父类方法
 * 限制:无法对final方法进行覆写
 
+### Spring AOP一世
+
+* spring2.0之前的aop实现
+
+#### Joinpiont
+
+1. aop的joinpoint类型:构造方法调用,字段的设置及获取,方法调用,方法执行
+2. spring Aop中仅支持方法级别的调用
+3. 超出spring aop功能,可用AspectJ扩展完善
+
+#### poincut
+
+
+
+
+
 
 
 ## 相似对比
-
-
-
-
-
-
-
 
 
