@@ -179,7 +179,27 @@ Transactions 事务
 
 #### poincut
 
+* 分类
+  * classFilter:类级别的匹配
+  * Methodmatcher:方法级别的拦截
+    * StaticMethodMatcher:不验证Joinpiont中的参数
+    * DynamicMethodMatcher:验证Joinpiont中的参数
 
+#### Advice
+
+* per-class:可在目标对象类的所有实例之间共享
+  * BeforeAdvice:
+    * 标志性接口没有定义任何方法
+    * 使用:初始化指定资源
+  * ThrowAdvice
+    * 使用:报错发邮件
+  * AroundAdvice
+    * 问题:没有一个合适的Advice类型来承载类似于系统资源清除之类的横切逻辑,Spring AOP中的AfterReturningAdvice不能更改jionPoint方法的返回值使我们在方法返回后无法对其进行更多的干预
+    * 采用的是Aop Alliance的标准接口
+* per-instance:不会在所有的目标对象示例之间共享,会为不同的对象保存他们各自的状态以及相关逻辑
+  * Introduction:唯一一种per-instance型Advice
+* 比较
+  * 示例:员工上班:上班打卡,"打卡机"类似于per-class,个人电脑类似于per-instance
 
 
 
