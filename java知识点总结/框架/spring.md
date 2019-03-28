@@ -119,7 +119,7 @@ Transactions 事务
 * Advice **通知**
   * (多个方法调用的统一执行点)定义了在 pointcut 里面定义的程序点具体要做的操作
   * 场景:有两种规则的多个位置,需要做同一种操作
-* **introduction引介**
+  * introduction是Advice
 * Aspect **切面**:
   * 是切入点和通知的结合
 * **weaving织入**
@@ -201,9 +201,45 @@ Transactions 事务
 * 比较
   * 示例:员工上班:上班打卡,"打卡机"类似于per-class,个人电脑类似于per-instance
 
+#### Aspect 
 
+Advisor代表spring中的Aspect
 
+*　分类
+  *　pointcutAdvisor
+  *　IntroductionAdvisor
+*　区别
+  *　IntroductionAdvisor只能应用于类级别的拦截,只能使用Introduction型的Advice
+*　Ordered
+  *　同一个joinpoint处执行多个Advice的横切逻辑,决定执行的先后顺序
+  *　顺序号越小,优先级越高
 
+#### Spring AOP织入
+
+1. Spring AOP使用代理模式实现AOP两种方式
+   * 动态代理
+   * CGLIB
+2. proxyFactory
+   1. 基于接口的代理
+      1. 接口的具体实现类和代理的类是两个类,代理类可以强制转化为接口,不能 转化为实现类
+   2. 基于类的代理
+      1. 可以设置代理目标类,强制使用基于类的代理
+
+### Spring AOP二世
+
+#### 1.x与2.0比较
+
+1. 2.0只是增加了新的使用方式
+2. 支持AspectJ5发布的AspectJ形式的AOP实现方式
+3. 简化了xml配置
+4. 可以使用POJO声明相关的Aspect和Advice
+5. 获得新的pointcut表述方式
+
+#### 过程理解
+
+切入点和连接点结合为Aspect
+
+Aspect和具体实用类的结合为织入过程
 
 ## 相似对比
 
