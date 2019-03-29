@@ -123,7 +123,7 @@ Transactions 事务
 * Aspect **切面**:
   * 是切入点和通知的结合
 * **weaving织入**
-  * 入是一个过程，是将切面应用到目标对象从而创建出AOP代理对象的过程，织入可以在编译期，类装载期，运行期进行。
+  * 织入是一个过程，是将切面应用到目标对象从而创建出AOP代理对象的过程，织入可以在编译期，类装载期，运行期进行。
 * AOL aop
   * 实现语言的统称
 * 织入和织入器
@@ -240,6 +240,43 @@ Advisor代表spring中的Aspect
 切入点和连接点结合为Aspect
 
 Aspect和具体实用类的结合为织入过程
+
+#### @Aspect形式的Spring AOP
+
+注解
+
+#### Schema形式的Spring AOP
+
+xml配置文件
+
+
+
+#### 三种Spring AOP比较
+
+* Spring AOP 1.x
+  * 基于接口定义的Advice声明方式
+* @AspecJ形式的AOP
+  * 在POJO上标注注解,方便管理
+* 基于Schema的AOP
+  * 融合了一代AOP和@AspectJ的优点,XSD配置
+
+## 相似对比
+
+# spring数据访问
+
+## 解决问题
+
+## 优势劣势
+
+### 优势
+
+### 劣势
+
+## 适用场景
+
+## 组成部分
+
+## 底层原理
 
 ## 相似对比
 
