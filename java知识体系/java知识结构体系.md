@@ -1,7 +1,12 @@
 # 基础知识
 
-## hashMap
+## 集合
+### hashMap
 [HashMap 的实现原理](<http://wiki.jikexueyuan.com/project/java-collection/hashmap.html>)
+
+### ArrayList和LinkedList的区别
+
+[ArrayList和LinkedList的区别](<https://blog.csdn.net/eson_15/article/details/51145788>)
 
 ## 内存与JVM
 
